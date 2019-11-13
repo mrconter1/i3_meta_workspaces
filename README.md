@@ -1,6 +1,4 @@
-# i3_meta_workspaces
-
-## **Quick Description**
+## **i3_meta_workspaces**
 
 This code enables multiple meta workspaces within your i3 window manager. It is very useful when working in multiple projects.
 
@@ -23,10 +21,10 @@ And move windows within the meta workspace with:
 1. Place *meta_workspaces.py* in the *~/.config/i3/* folder.
 2. Modify your i3 config to the following:
 
-```python
+```c
 set $script_path ~/.config/i3/meta_workspaces.py
 
-# switch to workspace
+# change to workspace
 bindsym $mod+1 exec "python3 $script_path -w 1"
 bindsym $mod+2 exec "python3 $script_path -w 2"
 bindsym $mod+3 exec "python3 $script_path -w 3"
