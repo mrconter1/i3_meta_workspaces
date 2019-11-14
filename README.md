@@ -9,7 +9,7 @@ Shift to meta workspace number X with:
 
 `$mod+Control+X`
 
-You can then use navigate to different windows with:
+You can then navigate to different windows with:
 
 `$mod+X`
 
