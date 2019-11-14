@@ -16,9 +16,6 @@ metaVarName = "meta_workspace"
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, 'variables')
 
-#Delimiter
-delimiter = ":"
-
 def readMeta():
     with open(filename) as fin:
         for line in fin:
@@ -45,12 +42,12 @@ if args.workspace is not None:
     meta = readMeta()
     workspace = args.workspace
     print(meta)
-    cmd = 'i3-msg "workspace ' + meta + delimiter + workspace + ';"'
+    cmd = 'i3-msg "workspace ' + meta + workspace + ';"'
     os.system(cmd)
 
 #Move window in between workspaces within meta workspace
 if args.move_window is not None:
     meta = readMeta()
     workspace = args.move_window
-    cmd = 'i3-msg "move container to workspace ' + meta + delimiter + workspace + ';"'
+    cmd = 'i3-msg "move container to workspace ' + meta + workspace + ';"'
     os.system(cmd)
