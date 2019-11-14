@@ -1,8 +1,7 @@
 ## **i3_meta_workspaces**
 
 This code enables multiple meta workspaces within your i3 window manager. It is very useful when working in multiple projects. 
-`$mod+X
-` usually allows you to access different workspaces. This script allows you to shift between different collections of workspaces i.e. meta workspaces. 
+`$mod+X` usually allows you to access different workspaces. This script allows you to shift between different collections of workspaces i.e. meta workspaces. 
 
 ## **Usage**
 
